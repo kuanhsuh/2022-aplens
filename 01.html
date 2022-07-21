@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .tooltip {
+            position: relative;
+        }
+
+        /* Tooltip text */
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            /* Position the tooltip text - see examples below! */
+            position: absolute;
+            top: 50px;
+            left: 0;
+            z-index: 1;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+
+    </style>
+</head>
+
+<body class="text-slate-700	">
+    <header class="mb-20">
+        <img src="https://via.placeholder.com/1200x300" alt="" class="w-full">
+    </header>
+
+    <section class="container mx-auto px-4">
+        <div class="flex items-end mb-8">
+            <h1 class="text-2xl mr-8 font-medium">100 website domains blocked by AP Lens</h1>
+            <div class="text-sm">Last updated 4 minutes ago</div>
+        </div>
+
+        <div>
+            <div class="flex justify-between items-end">
+                <!-- Left Dashboard Column -->
+                <div class="p-4 bg-slate-100 drop-shadow flex">
+                    <div class="border-r-2 px-8 border-slate-400">
+                        <div class="text-2xl font-medium mb-2">109</div>
+                        <div class="text-sm">Blocked website domain</div>
+                    </div>
+                    <div class="px-8">
+                        <div class="text-2xl font-medium mb-2">109,000</div>
+                        <div class="text-sm">Blocked website DNS request</div>
+                    </div>
+                </div>
+
+                <!-- Right Dashboard Column  -->
+                <div class="flex">
+                    <div class="px-8 py-4 bg-slate-100 h-12 mr-6 flex items-center">
+                        Past 24 Hour
+                    </div>
+                    <div class="px-8 py-4 bg-gray-800 text-white h-12 flex items-center">
+                        Lastest Domains
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-20 max-w-5xl mx-auto">
+            <div class="flex w-full items-center tooltip">
+                <div class="pr-8 py-2">asdf.com</div>
+                <div class="w-full border-l-2 border-slate-800 py-2">
+                    <div class="pl-4 mb-2">12,345 Request</div>
+                    <div class="bg-blue-700 h-3" style="width: 100%"></div>
+                </div>
+                <div class="tooltiptext bg-blue-100 w-96 p-4">
+                    <div class="flex justify-between border-b-2 border-blue-500 pb-4">
+                        <span>asdf.com</span>
+                        <span>12,345 Request</span>
+                    </div>
+                    <ul class="mt-4">
+                        <li class="mb-2">
+                            <span class="text-blue-500 inline-block w-32">Title:</span> This is website title...
+                        </li>
+                        <li class="mb-2">
+                            <span class="text-blue-500 inline-block w-32">Description:</span> This is website
+                            description...
+                        </li>
+                        <li class="mb-2">
+                            <span class="text-blue-500 inline-block w-32">IP:</span> 123.123.123
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex w-full items-center">
+                <div class=" pr-8 py-2">asdf.com</div>
+                <div class="w-full border-l-2 border-slate-800 py-2">
+                    <div class="pl-4 mb-2">12,345 Request</div>
+                    <div class="bg-blue-500 h-3" style="width: 75%"></div>
+                </div>
+            </div>
+            <div class="flex w-full items-center">
+                <div class=" pr-8 py-2">asdf.com</div>
+                <div class="w-full border-l-2 border-slate-800 py-2">
+                    <div class="pl-4 mb-2">12,345 Request</div>
+                    <div class="bg-blue-500 h-3" style="width: 75%"></div>
+                </div>
+            </div>
+            <div class="flex w-full items-center">
+                <div class=" pr-8 py-2">asdf.com</div>
+                <div class="w-full border-l-2 border-slate-800 py-2">
+                    <div class="pl-4 mb-2">12,345 Request</div>
+                    <div class="bg-blue-500 h-3" style="width: 75%"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
